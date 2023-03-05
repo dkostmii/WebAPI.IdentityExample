@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "bca1fc6a-fbf7-42de-879f-3d4e454e545b",
+		"name": "WebAPI.IdentityExample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5121/api/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"awesomeadmin\",\r\n    \"password\": \"W0rld!W0rld!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5121/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5121",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5121/api/auth/register?userRole=admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"awesomeadmin\",\r\n    \"email\": \"awesome@example.com\",\r\n    \"password\": \"W0rld!W0rld!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5121/api/auth/register?userRole=admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5121",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					],
+					"query": [
+						{
+							"key": "userRole",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5121/api/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"hellohello\",\r\n    \"email\": \"hello@world.com\",\r\n    \"password\": \"W0rld!W0rld!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5121/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5121",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5121/api/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"hellohello\",\r\n    \"password\": \"W0rld!W0rld!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5121/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5121",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5121/api/weatherForecast",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYXdlc29tZWFkbWluIiwianRpIjoiOWI1ZmNiYTctNWEzZS00ZDUxLTkyMWUtMjU1YWZlZmEzMDIyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2Nzc5NzU0ODksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyNDgiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.dOlW9akwCKmiPAvVDp18rW-gk4FZF0e4DPF8LWmda3Q",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5121/api/weatherForecast",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5121",
+					"path": [
+						"api",
+						"weatherForecast"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
